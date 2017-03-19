@@ -1,0 +1,156 @@
+.hideme
+{
+    opacity:0;
+}
+
+.full-width-div {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-color: #EDDBCD;
+    padding: 10px;
+}
+.name{
+  float:right;
+}
+.row{
+  padding-bottom: 30px;
+}
+
+.img:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.fixedHeight{
+  height:200px;
+  width: auto;
+}
+.frontImage{
+  height:200px;
+  width:auto;
+}
+.noPadding{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.collage{
+  height:150px;
+  position: relative;
+  animation: mymove 1s 1;
+}
+.rightJustified{
+  text-align: right;
+}
+.boxed{
+    border-radius: 5px;
+    border: 2px solid #E69C63;;
+    padding: 5px;
+}
+@keyframes mymove {
+    0%   {top: -20px;opacity: 0.25}
+    25%  {top: -10px;opacity: 0.50}
+    75%  {top: -5px;opacity: 0.75}
+    100% {top: 0px;opacity: 1.00}
+}
+@keyframes emphasis {
+    0%   {top: -15px;opacity: 0.25}
+    25%  {top: -10px;opacity: 0.50}
+    75%  {top: -5px;opacity: 0.75}
+    100% {top: 0px;opacity: 1.00}
+}
+h1,h2,p,h3{
+  animation: mymove 1s 1;
+  position:relative;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #C06014;
+    margin: 1em 0;
+    padding: 0; 
+}
+body{
+  background: url("img/background1edited2.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+p{
+  color: #000000;
+  font-family: 'Kanit', sans-serif;
+}
+h2{
+  color:#E69C63;
+  font-family: 'Quattrocento Sans', sans-serif;
+}
+header {
+  width: 100%;
+  height: 25px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+a,h1,h3 {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Quattrocento Sans', sans-serif;
+  color: #C06014;
+}
+a:hover {
+  color: #C0B283;
+}
+nav {
+  float: center;
+    
+}
+ul {
+  list-style: none;
+}
+li {
+  display: inline-block;
+  float: left;
+  padding-left: 10px;
+  font-size: 15px;
+}
+li:hover{
+  animation: emphasis .5s 1;
+  position:relative;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+}
+
+@media only screen and (max-width : 640px) {
+
+  header {
+    position: absolute;
+  }
+
+  nav ul, nav:active ul { 
+    display: none;
+    position: absolute;
+    padding: 20px;
+    background: #fff;
+    border: 5px solid #444;
+    right: 20px;
+    top: 60px;
+    width: 50%;
+    border-radius: 4px 0 4px 4px;
+
+  }
+  nav li {
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    margin: 0;
+  }
+  nav:hover ul {
+    display: block;
+  }
+  .collage{
+    display: none;
+  }
+}
+
+}
